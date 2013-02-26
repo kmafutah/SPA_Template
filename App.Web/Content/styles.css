@@ -1,0 +1,42 @@
+﻿@viewport {
+    width: device-width;
+}
+@-ms-viewport {
+    width: device-width;
+}
+@-o-viewport {
+    width: device-width;
+}
+
+html { font-size: 62.5%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-size: 1.4rem; line-height: 1.4em; color: #000000; background-color: #ffffff; } /* =14px */
+* { z-index: 0; }
+
+
+
+
+
+
+
+
+/**  M E D I A   Q U E R I E S  **/
+
+@media only screen and (max-width: 1000px) {
+    header, footer { width: 100%; min-width: 262px; }
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 600px) {
+
+}
+
+@media only screen and (max-width: 480px), only screen and (min-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+
+}
+
+@media only screen and (max-width: 360px) {
+
+}
