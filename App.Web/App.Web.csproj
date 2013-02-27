@@ -144,6 +144,8 @@
     <Content Include="Content\reset.css" />
     <Content Include="Content\styles.css" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\app\test.js" />
+    <Content Include="Scripts\app\test_model.js" />
     <Content Include="Scripts\lib\backbone.min.js" />
     <Content Include="Scripts\lib\modernizr.custom.js" />
     <Content Include="Scripts\main.js" />
@@ -162,7 +164,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Content\images\" />
     <Folder Include="Models\" />
-    <Folder Include="Scripts\app\" />
     <Folder Include="Tmpl\" />
   </ItemGroup>
   <ItemGroup>
