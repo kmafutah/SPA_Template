@@ -6,7 +6,7 @@ using App.Data.Contracts;
 namespace App.Data
 {
     /// <summary>
-    /// A maker of Code Camper Repositories.
+    /// A maker of Repositories.
     /// </summary>
     /// <remarks>
     /// An instance of this class contains repository factory functions for different types.
@@ -22,11 +22,11 @@ namespace App.Data
     public class RepositoryFactories
     {
         /// <summary>
-        /// Return the runtime Code Camper repository factory functions,
+        /// Return the runtime repository factory functions,
         /// each one is a factory for a repository of a particular type.
         /// </summary>
         /// <remarks>
-        /// MODIFY THIS METHOD TO ADD CUSTOM CODE CAMPER FACTORY FUNCTIONS
+        /// MODIFY THIS METHOD TO ADD CUSTOM FACTORY FUNCTIONS
         /// </remarks>
         private IDictionary<Type, Func<DbContext, object>> GetAppFactories()
         {
@@ -39,7 +39,7 @@ namespace App.Data
         }
 
         /// <summary>
-        /// Constructor that initializes with runtime Code Camper repository factories
+        /// Constructor that initializes with runtime repository factories
         /// </summary>
         public RepositoryFactories()
         {

@@ -33,12 +33,6 @@ namespace App.Web.Controllers
             Uow.SampleModel.Add(model);
             Uow.Commit();
 
-            //var response = Request.CreateResponse(HttpStatusCode.Created, model);
-
-            // Compose location header that tells how to get this session
-            // e.g. ~/api/samplemodel/5
-            //response.Headers.Location = new Uri(Url.Link(WebApiConfig.ControllerAndId, new { id = model.Id }));
-
             return model;
         }
 

@@ -16,8 +16,10 @@ namespace App.Web
 
             kernel.Bind<RepositoryFactories>().To<RepositoryFactories>().InSingletonScope();
 
+            // Customize this list:
             kernel.Bind<IRepositoryProvider>().To<RepositoryProvider>();
             kernel.Bind<IAppUow>().To<AppUow>();
+
 
             // Tell WebApi how to use our Ninject IoC
             config.DependencyResolver = new NinjectDependencyResolver(kernel);

@@ -8,7 +8,7 @@ using App.Model;
 namespace App.Data.SampleData
 {
     public class AppDatabaseInitializer :
-        //CreateDatabaseIfNotExists<CodeCamperDbContext>      // when model is stable
+        //CreateDatabaseIfNotExists<AppDbContext>      // when model is stable
         DropCreateDatabaseIfModelChanges<AppDbContext> // when iterating
     {
 

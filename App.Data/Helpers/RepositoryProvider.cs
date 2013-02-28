@@ -10,7 +10,7 @@ namespace App.Data
     /// </summary>
     /// <remarks>
     /// Caches repositories of a given type so that repositories are only created once per provider.
-    /// Code Camper creates a new provider per client request.
+    /// Creates a new provider per client request.
     /// </remarks>
     public class RepositoryProvider : IRepositoryProvider
     {
@@ -37,8 +37,7 @@ namespace App.Data
         /// </remarks>
         public IRepository<T> GetRepositoryForEntityType<T>() where T : class
         {
-            return GetRepository<IRepository<T>>(
-                _repositoryFactories.GetRepositoryFactoryForEntityType<T>());
+            return GetRepository<IRepository<T>>(_repositoryFactories.GetRepositoryFactoryForEntityType<T>());
         }
 
         /// <summary>

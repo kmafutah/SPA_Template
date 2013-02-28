@@ -13,8 +13,7 @@ namespace App.Data
             Database.SetInitializer(new AppDatabaseInitializer());
         }
 
-        public AppDbContext()
-            : base(nameOrConnectionString: "App") { }
+        public AppDbContext() : base(nameOrConnectionString: "App") { }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

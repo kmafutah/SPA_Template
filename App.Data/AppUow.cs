@@ -5,7 +5,7 @@ using App.Model;
 namespace App.Data
 {
     /// <summary>
-    /// The Code Camper "Unit of Work"
+    /// The "Unit of Work"
     ///     1) decouples the repos from the controllers
     ///     2) decouples the DbContext and EF from the controllers
     ///     3) manages the UoW
@@ -19,7 +19,7 @@ namespace App.Data
     /// A repository typically exposes "Get" methods for querying and
     /// will offer add, update, and delete methods if those features are supported.
     /// The repositories rely on their parent UoW to provide the interface to the
-    /// data layer (which is the EF DbContext in Code Camper).
+    /// data layer (which is the EF DbContext).
     /// </remarks>
     public class AppUow : IAppUow, IDisposable
     {
